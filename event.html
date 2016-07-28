@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="target-densitydpi=device-dpi,width=640, user-scalable=no" />
+	<link rel="stylesheet" href='css/animate.min.css'>
+	<link rel="stylesheet" href="css/swiper.3.2.0.min.css">
+	<link rel="stylesheet" href="css/index.css?v=128">
+	<title>同是幸福回家人</title>
+</head>
+<body>
+<div class="swiper-slide fourteen-slide stop-swiping">
+	<img class="logo" src="img/logo.jpg" alt="">
+	<img class="nine_theme" src="img/nine/theme.png" alt="">
+	<div class="xuan_box" id="tab_box">
+		<span id="zun" class="card_head">尊贵版</span>
+		<span class="card_head active">至尊版</span>
+		<div class="card_body cur">
+			<img class="body2_word0" src="img/fourteen/body2_word0.png" alt="">
+			<img class="kuang1" src="img/fourteen/kuang1.png" alt="">
+		</div>
+		<div class="card_body">
+			<img class="body1_word0" src="img/fourteen/body1_word0.png" alt="">
+			<img class="kuang2" src="img/fourteen/kuang2.png" alt="">
+		</div>
+
+	</div>
+	<a class="shop_btn" href="javascript:;"><img src="img/fourteen/goumai.png" alt=""></a>
+</div>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script>
+$(function(){
+			var oHead = $('#tab_box span')
+			var oBody = $('#tab_box div')
+	for(var i=0;i<oHead.length;i++){
+		oHead[i].index=i;
+		oHead[i].onclick=function(){
+			for(var i=0;i<oHead.length;i++){
+				oHead[i].className='card_head active';
+				oBody[i].className='card_body';
+			}
+			this.className='card_head';
+			oBody[this.index].className='card_body cur';
+		};
+	}
+	$('.shop_btn').click(function(){
+		if($('#zun').hasClass('active')){
+			$('.shop_btn').attr('href','http://cloud.aegonthtf.com/WEIXIN/getinfo/wX4OptionalTreasureHon.do?agentCode=ES00000005&sid=ES0000000000005&activeid=10001');
+		}else{
+			$('.shop_btn').attr('href','http://cloud.aegonthtf.com/WEIXIN/getinfo/wX4OptionalTreasureSov.do?agentCode=ES00000004&sid=ES0000000000004&activeid=10001');
+		}
+	})
+})
+</script>
+</body>
+</html>

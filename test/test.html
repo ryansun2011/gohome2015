@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style type="text/css">
+*{list-style:none;}
+li{float:left;}
+.li1{width:180px;}
+    input{width:200px;}
+.li2{margin-left:100px;}
+</style>
+</head>
+<body>
+    开始时间：<input type="text" class="ipt1" name="" value="2016-1-18 00:00:00"><br><br>
+    结束时间：<input type="text" class="ipt2" name="" value="2016-1-19 00:00:00"><br><br>
+    <input class="ipt3" type="button" name="" value="提交查询ID">
+    <input class="ipt4" type="button" name="" value="提交查询用户名">
+    <input class="ipt5" type="button" name="" value="提交查询电话">
+    <input class="ipt6" type="button" name="" value="提交查询身份证">
+    <input class="ipt7" type="button" name="" value="提交时间">
+    <input class="ipt8" type="button" name="" value="提交查询出生年月">
+
+    <div></div>
+    <!--<ul>-->
+        <!--<li class="li1">用户名</li>-->
+        <!--<li class="li2">电话</li>-->
+        <!--<li class="li3">身份证号码</li>-->
+        <!--<li class="li4">出生年月</li>-->
+        <!--<li class="li5">参与时间</li><br>-->
+    <!--</ul>-->
+<ul class="ip3"></ul>
+<ul class="ip4"></ul>
+<ul class="ip5"></ul>
+<ul class="ip6"></ul>
+<ul class="ip7"></ul>
+<ul class="ip8"></ul>
+</body>
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+ $('.ipt3').click(function(){
+     var ipt1 = $('.ipt1').val();
+     var ipt2 = $('.ipt2').val();
+    $.ajax({
+        url:'http://aegon.sinaapp.com/gohome2015/api/demo.php',
+        dataType:'json',
+        type:'post',
+        data:{start:ipt1,end:ipt2}
+    }).done(function(data){
+        console.log(data)
+        var arr = data.info;
+        $('div').html('总人数:'+arr.length);
+        for(var i=1;i<arr.length;i+=6){
+            var str = '<li class="li1">'+arr[i][1]+'</li>'
+            $('.ip3').append(str);
+        }
+    })
+ })
+
+// $('.ipt4').click(function(){
+//     var ipt1 = $('.ipt1').val();
+//     var ipt2 = $('.ipt2').val();
+//     $.ajax({
+//         url:'http://aegon.sinaapp.com/gohome2015/api/demo.php',
+//         dataType:'json',
+//         type:'post',
+//         data:{start:ipt1,end:ipt2}
+//     }).done(function(data){
+//         console.log(data)
+//         var arr = data.info;
+//         $('div').html('总人数:'+arr.length);
+//         for(var i=1;i<arr.length;i+=5){
+//             var str = '<li class="li1">'+arr[i][2]+'</li>'
+//             $('.ip4').append(str);
+//         }
+//     })
+// })
+//
+// $('.ipt5').click(function(){
+//     var ipt1 = $('.ipt1').val();
+//     var ipt2 = $('.ipt2').val();
+//     $.ajax({
+//         url:'http://aegon.sinaapp.com/gohome2015/api/demo.php',
+//         dataType:'json',
+//         type:'post',
+//         data:{start:ipt1,end:ipt2}
+//     }).done(function(data){
+//         console.log(data)
+//         var arr = data.info;
+//         $('div').html('总人数:'+arr.length);
+//         for(var i=1;i<arr.length;i+=5){
+//             var str = '<li class="li1">'+arr[i][3]+'</li>'
+//             $('.ip5').append(str);
+//         }
+//     })
+// })
+//
+// $('.ipt6').click(function(){
+//     var ipt1 = $('.ipt1').val();
+//     var ipt2 = $('.ipt2').val();
+//     $.ajax({
+//         url:'http://aegon.sinaapp.com/gohome2015/api/demo.php',
+//         dataType:'json',
+//         type:'post',
+//         data:{start:ipt1,end:ipt2}
+//     }).done(function(data){
+//         console.log(data)
+//         var arr = data.info;
+//         $('div').html('总人数:'+arr.length);
+//         for(var i=1;i<arr.length;i+=5){
+//             var str = '<li class="li1">'+arr[i][4]+'</li>'
+//             $('.ip6').append(str);
+//         }
+//     })
+// })
+//
+// $('.ipt7').click(function(){
+//     var ipt1 = $('.ipt1').val();
+//     var ipt2 = $('.ipt2').val();
+//     $.ajax({
+//         url:'http://aegon.sinaapp.com/gohome2015/api/demo.php',
+//         dataType:'json',
+//         type:'post',
+//         data:{start:ipt1,end:ipt2}
+//     }).done(function(data){
+//         console.log(data)
+//         var arr = data.info;
+//         $('div').html('总人数:'+arr.length);
+//         for(var i=1;i<arr.length;i+=5){
+//             var str = '<li class="li1">'+arr[i][5]+'</li>'
+//             $('.ip7').append(str);
+//         }
+//     })
+// })
+</script>
+</html>

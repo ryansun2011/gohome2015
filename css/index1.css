@@ -1,0 +1,786 @@
+html,body{
+    width:100%;
+    height:100%;
+    position:relative;
+}    
+*{
+    margin:0;
+    padding:0;
+}
+
+.swiper-slide{ display:none;}
+.nine-slide{ display: block;}
+.swiper-container{
+    width:100%;
+    height:100%;
+    font-size: 50px;
+    text-align: center;
+    position:relative;
+}
+.logo{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 10;
+}
+.slideBtn{
+    position:absolute;
+    left:294px;
+    bottom:28px;
+    z-index: 10;
+}
+
+
+/*第一页开始*/
+.one-slide{
+    background:url(../img/one/onebg.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.one-slide .word1{
+    position:absolute;
+    top:129px;
+    left:49px;
+}
+
+.one-slide .word2{
+    position:absolute;
+    top:171px;
+    left:49px;
+}
+
+.one-slide .word3{
+    position:absolute;
+    top:213px;
+    left:49px;
+}
+
+.one-slide .word4{
+    position:absolute;
+    top:255px;
+    left:49px;
+}
+.one-slide-add{
+    background:url(../img/one/onebg.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.one-slide-add .word1_1{
+    position:absolute;
+    top:129px;
+    left:49px;
+}
+.one-slide-add .word1_2{
+    position:absolute;
+    top:170px;
+    left:49px;
+}
+.one-slide-add .word1_3{
+    position:absolute;
+    top:213px;
+    left:49px;
+}
+/*第一页结束*/
+
+
+
+
+/*第二页开始*/
+.two-slide{
+    background:url(../img/two/twobg.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.two-slide .two_word1{
+    position:absolute;
+    left:50px;
+    top:148px;
+}
+.two-slide .two_word2{
+    position:absolute;
+    left:50px;
+    top:191px;
+}
+.two-slide .two_word3{
+     position:absolute;
+    left:50px;
+    top:233px;
+}
+.two-slide .two_word4{
+     position:absolute;
+    left:50px;
+    top:275px;
+}
+/*第二页结束*/
+
+
+/*第三页开始*/
+.three-slide{
+    background:url(../img/three/threebg.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.three-slide .three_word1{
+    position:absolute;
+    left:50px;
+    top:150px;
+}
+.three-slide .three_word2{
+    position:absolute;
+    left:50px;
+    top:191px;
+}
+.three-slide .three_word3{
+    position:absolute;
+    left:50px;
+    top:233px;
+}
+.three-slide .three_word4{
+    position:absolute;
+    left:50px;
+    top:275px;
+}
+/*第三页结束*/
+
+
+/*第四页开始*/
+.four-slide{
+    background:url(../img/four/fourbg.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.four-slide .four_word1{
+    position:absolute;
+    left:50px;
+    top:150px;
+}
+.four-slide .four_word2{
+    position:absolute;
+    left:50px;
+    top:191px;
+}
+.four-slide .four_word3{
+    position:absolute;
+    left:50px;
+    top:233px;
+}
+/*第四页结束*/
+
+
+
+/*第五页开始*/
+.five-slide{
+    background:url(../img/five/fivebg.png) no-repeat;
+    background-size:cover;
+    position:relative;
+}
+.five-slide .five_word1{
+    position:absolute;
+    left:50px;
+    top:150px;
+}
+.five-slide .five_word2{
+    position:absolute;
+    left:50px;
+    top:191px;
+}
+.five-slide .five_word3{
+    position:absolute;
+    left:50px;
+    top:233px;
+}
+.five-slide .five_word4{
+    position:absolute;
+    left:50px;
+    top:275px;
+}
+/*第五页结束*/
+
+
+/*第六页开始*/
+.six-slide{
+    background:url(../img/six/sixbg.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.six-slide .six_word1{
+    position:absolute;
+    left:50px;
+    top:150px;
+} 
+.six-slide .six_word2{
+    position:absolute;
+    left:50px;
+    top:191px;
+} 
+.six-slide .six_word3{
+    position:absolute;
+    left:50px;
+    top:233px;
+} 
+.six-slide .six_word4{
+    position:absolute;
+    left:50px;
+    top:275px;
+} 
+/*第六页结束*/
+
+
+/*第七页开始*/
+.seven-slide{
+    background:url(../img/seven/sevenbg.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.seven-slide .seven_word1{
+    position:absolute;
+    left:50px;
+    top:150px;
+}
+.seven-slide .seven_word2{
+    position:absolute;
+    left:50px;
+    top:191px;
+}
+.seven-slide .seven_word3{
+    position:absolute;
+    left:50px;
+    top:233px;
+}
+/*第七页结束*/
+
+
+/*第八页开始*/
+.eight-slide{
+    background:url(../img/eight/eightbg.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.eight-slide .eight_word1{
+    position:absolute;
+    left:50px;
+    top:150px;
+}
+.eight-slide .eight_word2{
+    position:absolute;
+    left:50px;
+    top:191px;
+}
+.eight-slide .eight_word3{
+    position:absolute;
+    left:50px;
+    top:233px;
+}
+.eight-slide .eight_word4{
+     position:absolute;
+    left:50px;
+    top:275px;
+}
+.eight-slide .eight_point{
+    position:absolute;
+    left:210px;
+    top:310px;
+}
+.eight-slide .eight_home{
+    position:absolute;
+    left:0;
+    top:320px;
+}
+/*第八页结束*/
+
+/*第九页开始*/
+.nine-slide{
+    background:url(../img/nine/nine.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.nine_theme{
+    position:absolute;
+    left:50px;
+    top:40px;
+}
+.nine_button{
+    position:absolute;
+    left:207px;
+    bottom:50px;
+}
+.nine-slide .nine_input{
+    width:544px;
+    height:400px;
+    background:url(../img/nine/touming.png) no-repeat;
+    position:absolute;
+    left:48px;
+    top:483px;
+}
+.nine-slide .tipaddress{width:300px;height:30px;display:none;position:absolute;left:169px;top:900px;font-size: 16px;line-height: 30px;color:#fff;text-align: center;}
+.nine_input .t1{position:absolute; left:234px; top:24px;}
+.nine_input .t2{position:absolute; left:234px; top:236px;}
+.nine_input .pro1{ width:200px; height:42px; position:absolute; left:70px; top:70px; }
+.nine_input .city1{width:200px; height:42px; position:absolute; left:290px; top:70px; }
+.nine_input .pro2{ width:200px; height:42px;position:absolute; left:70px; top:279px; }
+.nine_input .city2{ width:200px; height:42px;position:absolute; left:290px; top:279px; }
+.nine_input .bor{ border-radius: 7px; width:170px; height:42px; position:absolute; left:0; top:0;}
+.nine_input .bor input{ color:#d93715; font-size:22px; padding-left:13px; width:157px; height:42px; outline: none; border:none; position:absolute; left:0; top:0; border-radius: 7px;}
+.nine_input .bor a{ width:29px; height:42px; background:#f6f6f6 url(../img/nine/t.png) no-repeat center center; outline: none; border:none; position:absolute; right:0; top:0; border-radius:0 7px 7px 0;}
+.nine_input .bor a.active{ background-image:url(../img/nine/b.png);}
+.nine_input .pro .p{ position:absolute; right:0; top:8px;}
+.nine_input .pro .pro_box { overflow: hidden; width:167px; height:94px; border:1px solid #fff; border-radius:7px; position:absolute; left:0; top:38px; display:none;}
+.nine_input .pro .pro_box .pro_list{ width:100px; position:absolute; left:10px; top:0;}
+.nine_input .pro .pro_box .pro_list li{ font-size:20px; color:#fff; text-align: left; margin-top:10px; line-height:20px; }
+.nine_input .pro .top{ position:absolute; right:4px; top:10px;}
+.nine_input .pro .bot{ position:absolute; right:4px; bottom:7px;}
+/*第九页结束*/
+
+
+
+/*第十页开始*/
+.ten-slide{
+    background:url(../img/nine/nine.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.ten-slide .ten_map{
+    position:absolute;
+    left:28px;
+    top:371px;
+}
+.ten-slide .ten_star{
+    position:absolute;
+    background:url(../img/ten/button.png) no-repeat;
+    left:32px;
+    bottom:90px;
+    width:226px;
+    height:58px;
+    font-size: 27px;
+    color:#fff;
+    line-height: 58px;
+    text-align: center;
+}
+.ten-slide .ten_error{
+    position:absolute;
+    left:271px;
+    bottom:90px;
+}
+.ten-slide .ten_end{
+    position:absolute;
+    background:url(../img/ten/button.png) no-repeat;
+    left:383px;
+    bottom:90px;
+    width:226px;
+    height:58px;
+    font-size: 27px;
+    color:#fff;
+    line-height: 58px;
+    text-align: center;
+}
+.ten-slide .my_miles{
+    height:26px;
+    position:absolute;
+    left:193px;
+    bottom:46px;
+}
+.ten-slide .miles{
+   float:left;
+}
+.ten-slide .real_miles{
+    float:left;
+    height:26px;
+    font-size: 24px;
+    color:#ffe96f;
+    line-height: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+.ten-slide .km{
+    float:left;
+}
+/*第十页结束*/
+
+
+
+
+/*十一页开始*/
+.eleven-slide{
+    background:url(../img/nine/nine.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.eleven-slide .eleven_word1{
+    position:absolute;
+    left:63px;
+    top:412px;
+}
+.eleven-slide .eleven_word2{
+    position:absolute;
+    left:63px;
+    top:460px;
+}
+.eleven-slide .eleven_word3{
+    position:absolute;
+    left:63px;
+    top:510px;
+}
+.eleven-slide .eleven_word4{
+    position:absolute;
+    left:63px;
+    top:560px;
+}
+.eleven-slide .eleven_word5{
+    position:absolute;
+    left:63px;
+    top:636px;
+}
+.eleven-slide .guard{
+    position:absolute;
+    left:206px;
+    top:761px;
+}
+.eleven-slide .safety{
+    position:absolute;
+    left:153px;
+    top:848px;
+}
+/*十一结束*/
+
+
+
+/*十二开始*/
+.twelve-slide{
+    background:url(../img/nine/nine.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.twelve-slide .explainword{
+    position:absolute;
+    left:207px;
+    top:857px;
+}
+.twelve-slide .drow{
+    position:absolute;
+    left:175px;
+    top:857px;
+    width:19px;
+    height:19px;
+    background:url(../img/twelve/ju.png) no-repeat;
+}
+.twelve-slide .check{
+     position:absolute;
+    left:175px;
+    top:857px;
+    width:19px;
+    height:19px;
+}
+.twelve-slide .info{
+     width:544px;
+    height:400px;
+    background:url(../img/nine/touming.png) no-repeat;
+    position:absolute;
+    left:48px;
+    top:429px;
+}
+.twelve-slide .info .entertel{width:136px;height:30px;display:none;position:absolute;left:344px;top:241px;font-size: 16px;color:#fff;line-height: 30px;text-align: center;}
+.twelve-slide .tipsub_info{width:158px;height:30px;display:none;position:absolute;left:246px;top:903px;font-size: 16px;color:#fff;line-height: 30px;text-align: center;}
+.twelve-slide .sub_info{
+    position:absolute;
+    left:207px;
+    bottom:50px;
+}
+.twelve-slide .info .name_word{
+    position:absolute;
+    left:143px;
+    top:51px;
+}
+.twelve-slide .info .name_ipt{
+    position:absolute;
+    left:225px;
+    top:39px;
+    width:224px;
+    height:51px;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    text-align: center;
+    font-size: 20px;
+}
+.twelve-slide .info .idcard_word{
+    position:absolute;
+    left:72px;
+    top:129px;
+}
+.twelve-slide .info .idcard_card{
+     position:absolute;
+    left:225px;
+    top:116px;
+    width:224px;
+    height:51px;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    text-align: center;
+    font-size: 20px;
+}
+.twelve-slide .info .id_prompt{
+    position:absolute;
+    line-height: 25px;
+    text-align: center;
+    width:223px;
+    height:25px;
+    left:226px;
+    top:90px;
+    font-size: 12px;
+    color:#fff;
+}
+
+.twelve-slide .info .tel_word{
+    position:absolute;
+    left:143px;
+    top:205px;
+}
+.twelve-slide .info .tel_card{
+     position:absolute;
+    left:225px;
+    top:192px;
+    width:224px;
+    height:51px;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    text-align: center;
+    font-size: 20px;
+}
+.twelve-slide .info .tel_prompt{
+    position:absolute;
+    line-height: 25px;
+    text-align: center;
+    width:223px;
+    height:25px;
+    left:226px;
+    top:167px;
+    font-size: 12px;
+    color:#fff;
+}
+.twelve-slide .info .verificode_word{
+    position:absolute;
+    left:120px;
+    top:282px;
+}
+.twelve-slide .info .verificode_ipt{
+     position:absolute;
+    left:225px;
+    top:269px;
+    width:118px;
+    height:50px;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    text-align: center;
+    font-size: 20px;
+}
+.twelve-slide .info .countdown{
+    position:absolute;
+    left:352px;
+    top:270px;
+    background:url(../img/eleven/daojishi.png) no-repeat;
+    font-size: 23px;
+    text-align: center;
+    line-height: 49px;
+    width:116px;
+    height:49px;
+    color:#fff;
+}
+.twelve-slide .info .countdown_text{
+    position:absolute;
+    left:352px;
+    top:270px;
+    font-size: 16px;
+    background:url(../img/eleven/daojishi.png) no-repeat;
+    text-align: center;
+    line-height: 49px;
+    width:116px;
+    height:49px;
+    color:#fff;
+    display: none;
+}
+.twelve-slide .info .remind{
+    position:absolute;
+    left:73px;
+    top:333px;
+}
+.twelve-slide .info .explain{
+    position:absolute;
+    left:222px;
+    top:368px;
+}
+.twelve-slide .successbox{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:url(../img/eleven/subsucccess.png) no-repeat;
+    background-size: cover;
+    display: none;
+}
+.twelve-slide .successbox .smlbox{
+    background:url(../img/twelve/bg.png) no-repeat;
+    width:463px;
+    height:393px;
+    z-index: 1000;
+    position:absolute;
+    left:89px;
+    top:464px;
+}
+.twelve-slide .successbox .smlbox .subsucc_word_1{
+    position:absolute;
+    left:107px;
+    top:115px;
+}
+.twelve-slide .successbox .smlbox .subsucc_word_2{
+     position:absolute;
+    left:107px;
+    top:197px
+}
+.twelve-slide .successbox .smlbox .subsucc_word_3{
+     position:absolute;
+    left:155px;
+    top:236px
+}
+.twelve-slide .successbox .smlbox .subsucc_word{
+    position:absolute;
+    left:95px;
+    top:40px;
+}
+.twelve-slide .successbox .smlbox .sure_btn{
+    position:absolute;
+    width:116px;
+    height:49px;
+    left:176px;
+    top:320px;
+}
+.twelve-slide .info_explain{
+     width:544px;
+    height:400px;
+    background:url(../img/twelve/explainshuoming.png) no-repeat;
+    position:absolute;
+    left:48px;
+    top:429px;
+    display: none;
+}
+.twelve-slide .info_explain .close{
+    position:absolute;
+    right:10px;
+    top:-10px;
+}
+/*十二页结束*/
+
+
+
+
+/*十三页开始*/
+.thirteen-slide{
+     background:url(../img/nine/nine.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.thirteen-slide .more_box{
+    width:464px;
+    height:362px;
+    background:url(../img/thirteen/more_box.png) no-repeat;
+    position:absolute;
+    left:88px;
+    top:443px;
+}
+.thirteen-slide .more_box .good_new{
+    position:absolute;
+    left:107px;
+    top:31px;
+}
+.thirteen-slide .more_box .more_word{
+    position:absolute;
+    left:124px;
+    top:126px;
+}
+.thirteen-slide .more_box .more_btn{
+    position:absolute;
+    left:91px;
+    top:285px;
+}
+.thirteen-slide .qrcode{
+    position:absolute;
+    left:105px;
+    top:837px;
+}
+.thirteen-slide .shibie{
+    position:absolute;
+    left:275px;
+    top:844px;
+}
+/*十三页结束*/
+
+
+
+
+/*十四页开始*/
+.fourteen-slide{
+    background:url(../img/nine/nine.png) no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.fourteen-slide .xuan_box{
+    width:544px;
+    height:440px;
+    position:absolute;
+    left:48px;
+    top:475px;
+    z-index: 3;
+    background:url(../img/fourteen/xuan_box.png);
+}
+.fourteen-slide .card_head{
+    float:left;
+    width:272px;
+    height:48px;
+    line-height: 48px;
+    text-align: center;
+    font-weight:bold;
+    font-size: 24px;
+    color:#fff;
+}
+.fourteen-slide .card_head.active{
+    background:url(../img/fourteen/zuo.png);
+}
+.fourteen-slide .card_body{
+    width:544px;
+    height:390px;
+    display: none;
+    margin-top: 50px;
+}
+.fourteen-slide .card_body.cur{
+    display:block;
+}
+.fourteen-slide .card_body .body1_word0{
+    position:absolute;
+    left:15px;
+    top:80px;
+}
+.fourteen-slide .card_body .kuang1{
+    position:absolute;
+    left:5px;
+    top:148px;
+}
+.fourteen-slide .card_body .kuang2{
+    position:absolute;
+    left:5px;
+    top:157px;
+}
+
+.fourteen-slide .card_body .body2_word0{
+    position:absolute;
+    left:15px;
+    top:80px;
+}
+
+.fourteen-slide .shop_btn{
+    position:absolute;
+    left:206px;
+    top:940px;
+}
